@@ -1,6 +1,6 @@
 # Privacy Policy
 
-_Last updated: 2026-05-30_
+_Last updated: 2026-07-20_
 
 MacroSnap ("we", "us", or "the app") is a calorie and meal-planning iOS application. This privacy policy explains what data we collect, why, where it lives, and your rights over it.
 
@@ -10,6 +10,7 @@ MacroSnap ("we", "us", or "the app") is a calorie and meal-planning iOS applicat
 - We use your email and password (or Sign in with Apple) to authenticate you.
 - AI features (meal parsing, plan generation, recipe steps) send the relevant text or photo to our server, which forwards it to Anthropic's API. Your raw API key is never on the device.
 - We never sell your data and never use it for advertising.
+- We count which features get used so we know what to improve. Those counts never include what you ate, your photos, or your weight, and you can turn them off in Settings.
 - You can delete your account and all your data at any time from Settings.
 
 ## What we collect
@@ -39,18 +40,38 @@ When you use voice input, photo logging, plan generation, or other AI features:
 - Our backend forwards it to Anthropic's Claude API for processing.
 - The response is returned to your device. We do not retain the inputs or outputs beyond what is required to deliver the response.
 
+### Product analytics
+
+To decide what to build and fix, we record which features get used. This is
+deliberately narrow, and we would rather have less data than have data we have to
+apologise for:
+
+- **What we send**: counts and categories only. Which screens opened, how long a
+  meal took to log, how many items a meal had, whether an AI-parsed meal needed
+  correcting and by roughly what percentage, whether a plan generated
+  successfully, and error and crash counts.
+- **What we never send**: your meal names, ingredients, photos, notes, voice
+  transcripts, captions, search queries, username, email, or **any body weight**.
+  Calories are recorded only as a coarse band (for example "400-699"), never as
+  an exact figure.
+- **Who processes it**: PostHog, acting as our processor. Events are tied to a
+  random account identifier, not to your name or email.
+- **Opting out**: Settings > Data > Share usage analytics. Turning it off stops
+  collection immediately, and the app keeps working exactly the same.
+
 ## Where data lives
 
 - **Your device**: all app data is stored locally first (SwiftData) and synced opportunistically.
 - **Our backend**: hosted on Supabase. Your row-level data is only accessible by your authenticated session.
 - **Anthropic** (AI provider): receives only the text or photo you actively submit for AI features. Anthropic's data handling is governed by their own terms.
+- **PostHog** (analytics provider): receives only the anonymous usage counts described above.
 
 ## What we do not do
 
 - We do not sell your data.
 - We do not use your data for advertising.
 - We do not share your data with third parties for marketing.
-- We do not run third-party analytics SDKs.
+- We do not use analytics to profile you or to target you with anything.
 
 ## Your rights
 
