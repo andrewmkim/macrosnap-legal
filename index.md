@@ -7,5 +7,6 @@ title: MacroSnap legal
 
 - [Privacy Policy](./privacy.html)
 - [Terms of Service](./terms.html)
+- [Support](./support.html)
 
 Questions: [amkim2003@gmail.com](mailto:amkim2003@gmail.com)
