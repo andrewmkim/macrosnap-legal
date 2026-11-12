@@ -5,7 +5,7 @@ title: MacroSnap support
 
 # MacroSnap support
 
-Contact us from the app (Settings > Support), or use the email address on the [home page](./). We reply within two business days.
+Contact us from the app (Settings > Contact support), or use the email address on the [home page](./). We reply within two business days.
 
 ## Common questions
 
